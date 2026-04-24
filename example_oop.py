@@ -26,5 +26,22 @@ c.increment_2()
 print(f"{c.current()}")
 
 
+#-----Session 2 of 00 - Employee Example
+class Employee:
+    def __init__(self, name : str, base_salary: float) -> None:
+        self.name = name
+        self.base_salary = base_salary
+
+def cal_bonus(self, performance: float) -> float:
+    return self.base_salary * performance
+
+
+emp = Employee("Alice", 50000.0)
+
+bonus = emp.cal_bonus(1.1)
+
+print(f"Bonus for {emp.name} is {bonus}")
+
+
 
         
