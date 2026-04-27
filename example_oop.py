@@ -50,6 +50,4 @@ bonus = emp.cal_bonus(1.1)
 print(f"Bonus for {emp.name} is {bonus}")
 
 
-
-
         

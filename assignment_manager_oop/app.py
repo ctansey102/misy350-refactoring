@@ -1,7 +1,6 @@
 import streamlit as st
-from assignment_manager_oop.assignment_manager import AssignmentManager
-from assignment_manager_oop.assignment_store import AssignmentStore
-
+from assignment_manager_oop.services.assignment_manager import AssignmentManager
+from assignment_manager_oop.data.assignment_store import AssignmentStore
 
 st.set_page_config("Assignment Manager")
 
@@ -25,6 +24,7 @@ if st.session_state["logged_in"]:
         manager = AssignmentManager(store.load())
 
         
+
     elif st.session_state["role"] == "student":
         pass
 else:

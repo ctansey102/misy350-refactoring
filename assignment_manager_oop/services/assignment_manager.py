@@ -9,7 +9,7 @@ class AssignmentManager:
         return list(self.assignments)
 
     def add(self, title: str , description: str,
-            points: int , assignment_type: str):
+            points: int , assignment_type: str) -> Dict:
         if not title.strip():
             raise ValueError("Title is required")
         
@@ -19,13 +19,14 @@ class AssignmentManager:
             raise ValueError("assignment type is invalid")
         
         new_assignment = {
-            "id": str(uuid.uuid4()),
-            "title": title,
-            "description": description,
-            "points": points,
-            "type": assignment_type.lower()
+                "id": str(uuid.uuid4()),
+                "title" : title,
+                "description": description,
+                "points" : points,
+                "type" : assignment_type.lower()
         }
         self.assignments.append(new_assignment)
+        return new_assignment
 
     def delete(self, assignment_id: str):
-        self.assignments = [assignment for assignment in self.assignments if assignment["id"] != assignment_id]
+        pass

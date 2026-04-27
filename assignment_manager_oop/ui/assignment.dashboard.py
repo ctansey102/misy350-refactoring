@@ -1,6 +1,6 @@
 import streamlit as st
-from assignment_manager_oop.assignment_manager import AssignmentManager
-from assignment_manager_oop.assignment_store import AssignmentStore
+from assignment_manager_oop.services.assignment_manager import AssignmentManager
+from assignment_manager_oop.data.assignment_store import AssignmentStore
 
 class AssignmentDashboard:
     def __init__(self, manger: 'AssignmentManager',
