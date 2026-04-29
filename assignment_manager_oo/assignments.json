@@ -1,0 +1,8 @@
+[
+    {"id": "HW1", 
+    "title": "Intro to Database",
+     "description": "basics of database design",
+     "points": 100,
+    "type" : "homework"}
+    
+]
